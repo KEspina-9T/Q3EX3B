@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>EX2: AREA OF THE TRIANGLE</title>
+</head>
+<body>
+
+    <div class="container">
+    
+
+        <h1>AREA OF THE TRIANGLE</h1><hr>
+            <img src="triangle.png" width="20%">
+        <form>
+            <label for="height">Enter height:</label>
+            <input type="text" name="height" id="HEIGHT">
+            <label for="base">Enter base:</label>
+            <input type="text" name="base" id="BASE">            
+
+            <h5 id="tarea">The area of the triangle is...</h6><hr>
+
+            <button type="button" onclick="Answer()">Answer</button>
+            <button type="button" onClick="window.location.reload()"> Refresh </button>
+        </form>
+        <hr>
+        <div class="footer">
+            <p><a href="https://github.com/KEspina-9T?tab=repositories" target="_blank">&#169;2025 | ICT 9-TOPAZ | Exercise 3B: Function</a></p>
+            
+        </div>
+
+
+    <script type="text/javascript">
+        function Answer(height, base, area, r_area){
+            var height = document.getElementById('HEIGHT').value;
+            var base = document.getElementById('BASE').value;
+            var area = height*base;
+            var r_area = area.toFixed(2);
+
+            document.getElementById('tarea').innerHTML ='The area of the triangle is ' + r_area + '!';
+        }
+    </script>
+    </div>
+</body>
+</html>
